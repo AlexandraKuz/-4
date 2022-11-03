@@ -1,0 +1,12 @@
+
+print('enter three numbers:')
+a = int(input())
+b = int(input())
+c = int(input())
+
+if b < a < c or c < a < b:
+    print('average:', a)
+elif a < b < c or c < b < a:
+    print('average:', b)
+else:
+    print('average:', c)
