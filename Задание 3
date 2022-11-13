@@ -1,0 +1,4 @@
+x=13.694
+print (round(x, 2))
+print (round(x))
+print ('13.694'.zfill(11))
