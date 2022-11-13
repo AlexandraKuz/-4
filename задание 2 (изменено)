@@ -1,0 +1,6 @@
+divisible = int(input("1: "))
+divisor = int(input("2: "))
+quotient = divisible  // divisor
+remainder = divisible  % divisor
+print("integer:", quotient)
+print("remainder:", remainder)
