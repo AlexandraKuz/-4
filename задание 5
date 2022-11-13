@@ -1,0 +1,28 @@
+def reverse(number):
+    str_number = str(number)
+    if number<0:
+        str_number = '-'+str_number[::-1][:-1]
+        number = int(str_number)
+    else:
+        str_number = str_number[::-1]
+        number = int(str_number)
+    neg_limit= -0x50000
+    pos_limit= 0x5ffff
+
+    if(number<0):
+        variable=number&neg_limit
+        if(variable==neg_limit):
+            return number
+        else:
+            return 0
+    elif(number==0):
+        return number
+    else:
+        variable = number&pos_limit
+        if(variable==number):
+            return number
+        else:
+            return 0
+
+variable = int(input("введите число: "))
+print("число наоборот:",reverse(variable))
